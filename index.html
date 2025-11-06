@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página y de la vista previa (WhatsApp) -->
+    <title>Inventario de Productos v1.0</title>
+    <meta property="og:title" content="Inventario de Productos" />
+    <!-- Descripción corta y atractiva -->
+    <meta property="og:description" content="Inventario de Productos >UCLA-DCyT<" />
+    <!-- Imagen que se muestra en WhatsApp (logo o imagen destacada, 800x418 px recomendado) -->
+    <meta property="og:image" content="https://mi-inventario-v01.vercel.app/resources/logo.png" />
+    <!-- URL del proyecto -->
+    <meta property="og:url" content="https://mi-inventario-v01.vercel.app" />
+    <!-- Tipo de contenido -->
+    <meta property="og:type" content="website" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./resources/favicon.png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css?v251103-1750" />
+</head>
+
+<body>
+    <h3 style="width: 320px;">Inventario de Productos</h3>
+    <section id="inventario">
+        <div>
+            <button id="inventario_btAgregarProducto">Agregar Producto</button>
+        </div>
+    </section>
+    <section style="font-size: 10px;">
+        <h3>PRODUCTOS REGISTRADOS</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 100px;">Nombre del Producto</th>
+                    <th style="width: 80px;">ID</th>
+                    <th style="width: 100px;">Disponibilidad</th>
+                </tr>
+            </thead>
+            <tbody id="inventario_divProductosRegistrados"> </tbody>
+        </table>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index()
+    </script>
+</body>
+
+</html>
